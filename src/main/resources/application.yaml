@@ -1,0 +1,12 @@
+spring:
+  jpa:
+    database: MYSQL
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop # drop удобен для теста проекта.
+  datasource:
+    platform: mysql
+    url: jdbc:mysql://localhost:3306/worker_control?serverTimezone=UTC # serverTimezone для решения ошибки MySql
+    username: root
+    password: admin
+    driverClassName: com.mysql.cj.jdbc.Driver
