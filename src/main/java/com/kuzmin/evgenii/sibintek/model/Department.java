@@ -2,10 +2,8 @@ package com.kuzmin.evgenii.sibintek.model;
 
 import lombok.Data;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
-import java.util.ArrayList;
-import java.util.List;
+import javax.persistence.*;
+import java.util.Set;
 
 @Data
 @Entity
@@ -13,10 +11,12 @@ import java.util.List;
 //Таблица отделов
 public class Department {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private long id;
     //Имя отдела
-    String departmentName;
-
-
+    private String departmentName;
     //Список рабочих департамента
-    List<Worker> workerList = new ArrayList();
+    @OneToMany(mappedBy = "department", fetch = FetchType.LAZY)
+    private Set<Worker> workerList;
 }

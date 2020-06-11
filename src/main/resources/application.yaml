@@ -3,10 +3,10 @@ spring:
     database: MYSQL
     show-sql: true
     hibernate:
-      ddl-auto: create-drop # drop удобен для теста проекта.
+      ddl-auto: create-drop # drop СѓРґРѕР±РµРЅ РґР»СЏ С‚РµСЃС‚Р° РїСЂРѕРµРєС‚Р°.
   datasource:
     platform: mysql
-    url: jdbc:mysql://localhost:3306/worker_control?serverTimezone=UTC # serverTimezone для решения ошибки MySql
+    url: jdbc:mysql://localhost:3306/worker_control?serverTimezone=UTC # serverTimezone РґР»СЏ СЂРµС€РµРЅРёСЏ РѕС€РёР±РєРё MySql
     username: root
     password: admin
     driverClassName: com.mysql.cj.jdbc.Driver

@@ -7,8 +7,17 @@ import org.springframework.web.bind.annotation.RestController;
 
 @Slf4j
 @RestController
-@RequestMapping(path = "/control/v1")
+@RequestMapping(path = "/control/v1/worker")
 public class WorkerController {
+
+
+
+
+
+
+/*
+    @PostMapping(path = "a")
+*/
 
 
 }
