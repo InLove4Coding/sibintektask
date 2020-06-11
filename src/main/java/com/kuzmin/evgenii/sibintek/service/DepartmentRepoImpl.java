@@ -19,5 +19,7 @@ public class DepartmentRepoImpl {
         departmentRepo.save(department);
         log.info("Добавлен новый департамент: {}", departmentRepo);
     }
+
+
 }
 

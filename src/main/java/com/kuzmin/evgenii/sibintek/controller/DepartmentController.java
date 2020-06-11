@@ -23,4 +23,6 @@ public class DepartmentController {
     void addDepartment(@RequestBody Department department) {
         departmentRepo.addNewDepartment(department);
     }
+
+
 }
