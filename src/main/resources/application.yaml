@@ -1,12 +1,12 @@
 spring:
   jpa:
-    database: MYSQL
+    database: POSTGRESQL
     show-sql: true
     hibernate:
       ddl-auto: create-drop # drop удобен для теста проекта.
   datasource:
-    platform: mysql
-    url: jdbc:mysql://localhost:3306/worker_control?serverTimezone=UTC # serverTimezone для решения ошибки MySql
-    username: root
+    platform: jdbc:postgresql
+    url: jdbc:postgresql://localhost:5432/developedb
+    username: postgres
     password: admin
-    driverClassName: com.mysql.cj.jdbc.Driver
+    driverClassName: org.postgresql.Driver
