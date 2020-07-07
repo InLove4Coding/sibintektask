@@ -20,8 +20,6 @@ public class WorkShift {
     private LocalDate date;
     //Продолжительность смены в часах
     private int shiftHour;
-    //Зарплата за смену
-    private long salary;
     //Рабочий на смене
     @JoinColumn(name = "worker_id", foreignKey = @ForeignKey(name = "work_shift_to_worker"))
     @ManyToOne(fetch = FetchType.LAZY)
