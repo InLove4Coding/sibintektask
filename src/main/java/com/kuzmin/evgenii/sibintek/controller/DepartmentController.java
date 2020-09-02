@@ -6,12 +6,13 @@ import com.kuzmin.evgenii.sibintek.model.Worker;
 import com.kuzmin.evgenii.sibintek.service.DepartmentRepoImpl;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Stream;
 
 @RestController
 @RequestMapping(path = "/control/v1/department")
 public class DepartmentController {
-
 
     private final DepartmentRepoImpl departmentRepo;
 

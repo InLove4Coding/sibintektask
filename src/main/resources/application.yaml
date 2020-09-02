@@ -3,10 +3,9 @@ spring:
     database: POSTGRESQL
     show-sql: true
     hibernate:
-      ddl-auto: create-drop # drop удобен для теста проекта.
+      ddl-auto: create-drop
   datasource:
-    platform: jdbc:postgresql
-    url: jdbc:postgresql://localhost:5432/developedb
-    username: postgres
+    url: jdbc:postgresql://${DB_URL:172.119.0.3}:${DB_PORT:5434}/developedb
+    username: admin
     password: admin
     driverClassName: org.postgresql.Driver
